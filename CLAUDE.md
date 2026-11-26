@@ -20,8 +20,11 @@ Sites are generated with the project skill `.claude/skills/crea-sito/SKILL.md` (
 ## Layout
 
 ```
+_templates/              # at the repo root, NOT under shared/
+  privacy.html           # privacy policy body to copy into each site as privacy_policy.html, restyled
+  <uuid>/                # an unpacked example site (index.html + assets/)
+  *-master.zip           # more example sites, zipped
 shared/
-  _templates/            # example sites + privacy_policy.html to copy and restyle per site
   sites/<serial>/        # one generated site per folder; delete and recreate if it already exists
     index.html           # HTML in the root
     privacy_policy.html
@@ -32,4 +35,4 @@ shared/
     .website             # company homepage URL (only if one was found)
 ```
 
-`shared/` does not exist yet in the initial commit. Create it as needed, and expect `shared/_templates/` to be supplied before the first generation.
+`_templates/privacy.html` is only the body (h1, sections, lists) with the template author's data. Wrap it in a full page using the site's own navbar, footer and CSS, and replace the Titolare del trattamento details (name, address, P.IVA, email) with the business's own.

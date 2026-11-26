@@ -22,7 +22,7 @@ You must generate a simple commercial web page
 - When on mobile viewport the phone number must be clickable and must open a phone call
 - Add a "Vieni a trovarci" entry in the top menu
 - ragione sociale, partita IVA, indirizzo, numero di telefono e email devono essere presenti nel footer del sito web.
-- Add a link to Privacy Policy in the footer of the website copying the file shared/_templates/privacy_policy.html in the new site directory and adapt the layout of the Privacy Policy to the theme of the website.
+- Add a link to Privacy Policy in the footer of the website. Copy the file _templates/privacy.html (at the repo root) into the new site directory as privacy_policy.html, adapt its layout to the theme of the website, and replace the Titolare del trattamento details (name, address, P.IVA, email) with the business's own.
 
 ## Do not
 - do not truncate the name of the company, even if it is long in each section of the page
@@ -45,7 +45,7 @@ You must generate a simple commercial web page
 - Inserisci nella directory un file .category contenente il nome della categoria del business che trovi nell'attributo category del place details fornito in input.
 - Inserisci nella directory un file .place_id contenente il place_id del business.
 
-You can find some examples web sites in the shared/_templates/ folder.
+You can find some examples web sites in the _templates/ folder at the repo root: an unpacked example in _templates/<uuid>/ and more in the *-master.zip archives.
 
 You have to create a folder shared/sites/<serial>/ and save the generated files there in an appropriate structure (HTML in root, then assets/js, assets/css and assets/images).
 
